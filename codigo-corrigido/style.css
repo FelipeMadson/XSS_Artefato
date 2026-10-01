@@ -1,0 +1,253 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+
+    /* Fundo azul bem clarinho */
+    background: #eef7ff;
+
+    color: #26384a;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+
+    margin: 40px auto;
+}
+
+/* =========================
+   TÍTULO
+========================= */
+
+h1 {
+    margin-bottom: 10px;
+
+    color: #315b82;
+}
+
+.descricao {
+    color: #64788b;
+
+    line-height: 1.5;
+}
+
+/* =========================
+   BOTÃO
+========================= */
+
+.acoes {
+    margin: 25px 0;
+}
+
+.botao,
+button {
+    display: inline-block;
+
+    padding: 12px 18px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #78b8e8;
+
+    color: white;
+
+    text-decoration: none;
+
+    cursor: pointer;
+
+    font-size: 15px;
+
+    transition: background 0.2s ease,
+                transform 0.2s ease;
+}
+
+.botao:hover,
+button:hover {
+    background: #5fa5dc;
+
+    transform: translateY(-1px);
+}
+
+/* =========================
+   CARDS
+========================= */
+
+.comentarios,
+.novo-comentario,
+.resultado {
+    background: #ffffff;
+
+    padding: 25px;
+
+    margin-top: 20px;
+
+    border-radius: 12px;
+
+    border: 1px solid #d9ebf8;
+
+    box-shadow:
+        0 4px 15px rgba(91, 143, 180, 0.08);
+}
+
+/* =========================
+   TÍTULOS DAS SEÇÕES
+========================= */
+
+h2 {
+    margin-top: 0;
+
+    color: #3d6689;
+}
+
+/* =========================
+   COMENTÁRIOS
+========================= */
+
+.comentario {
+    border-bottom: 1px solid #dcebf5;
+
+    padding: 15px 0;
+}
+
+.comentario:last-child {
+    border-bottom: none;
+}
+
+.comentario h3 {
+    margin-bottom: 5px;
+
+    color: #315b82;
+}
+
+.comentario p {
+    color: #455b6d;
+
+    line-height: 1.5;
+}
+
+.comentario small {
+    color: #8296a7;
+}
+
+/* =========================
+   FORMULÁRIO
+========================= */
+
+form {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+label {
+    color: #49677f;
+
+    font-weight: 600;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #cbdfea;
+
+    border-radius: 8px;
+
+    background: #ffffff;
+
+    color: #334b5e;
+
+    font-size: 16px;
+
+    outline: none;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #78b8e8;
+
+    box-shadow:
+        0 0 0 3px rgba(120, 184, 232, 0.15);
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #9aabb8;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* =========================
+   RESULTADO
+========================= */
+
+.resultado {
+    background: #f7fbff;
+
+    border: 1px solid #d4e9f8;
+}
+
+/* =========================
+   LINKS
+========================= */
+
+a {
+    color: #4d8ab8;
+}
+
+a:hover {
+    color: #326d99;
+}
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media (max-width: 600px) {
+
+    .container {
+        width: 94%;
+
+        margin: 20px auto;
+    }
+
+    .comentarios,
+    .novo-comentario,
+    .resultado {
+        padding: 18px;
+    }
+
+    h1 {
+        font-size: 27px;
+    }
+
+    .botao,
+    button {
+        width: 100%;
+
+        text-align: center;
+    }
+
+    input,
+    select,
+    textarea {
+        font-size: 16px;
+    }
+}
